@@ -1,7 +1,11 @@
 import React from 'react';
+import AddNote from './components/addNote/AddNote';
 
 const App = () => (
-  <div>Notes App</div>
+  <div>
+    <h1>Notes</h1>
+    <AddNote />
+  </div>
 );
 
 export default App;
