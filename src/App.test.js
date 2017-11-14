@@ -12,10 +12,11 @@ it('App renders without crashing', () => {
   const mockFunction = jest.fn();
 
   const component = shallow(
-      <App
-        state={initialState}
-        submitNote={mockFunction}
-      />,
+    <App
+      state={initialState}
+      submitNote={mockFunction}
+      notes={[]}
+    />,
   );
 
   expect(component.exists()).toEqual(true);

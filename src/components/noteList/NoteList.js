@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 const NoteList = ({ notes }) => {
   const noteItems = notes.map(note => (
     <li key={note.id}>
-      <span className="note-text">{note.text}</span>
+      <span className="note-text">
+        {note.text}
+      </span>
     </li>
   ));
 
