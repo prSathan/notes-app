@@ -14,7 +14,14 @@ describe('AddNote component', () => {
   });
 
   it('Should have one input', () => {
-   const component = shallow(<AddNote />);
-   expect(component.find('.note-input').length).toEqual(1);
- });
+    const component = shallow(<AddNote />);
+    expect(component.find('.note-input').length).toEqual(1);
+  });
+
+  describe('Add note button', () => {
+    it('Should exist', () => {
+      const component = shallow(<AddNote />);
+      expect(component.find('.note-submit').length).toEqual(1);
+    });
+  });
 });

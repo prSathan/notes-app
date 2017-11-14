@@ -2,7 +2,12 @@ import React from 'react';
 
 const AddNote = () => (
   <div>
-    <input className="note-input" />
+    <form>
+      <input className="note-input" />
+      <button type="submit" className="note-submit">
+        Add Note
+      </button>
+    </form>
   </div>
 );
 
